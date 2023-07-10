@@ -1,0 +1,47 @@
+#texto-container {
+  overflow: hidden;
+  display: flex;
+  background-color:#547C64;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+
+
+}
+
+#texto {
+  white-space: nowrap;
+  font-size: 24px;
+
+}
+.fondo{
+  
+  background-image: url('../../public/img/fondo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+
+}
+
+.contenedor {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+  padding: 20px;
+}
+
+.subirlo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 86vh;
+}
+
+.img-logo {
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 2vh;
+}
+
+

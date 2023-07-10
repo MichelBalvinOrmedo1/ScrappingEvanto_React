@@ -19,9 +19,11 @@
   "exclude": [
     ".eslintrc.cjs"
   ],
-  "files": [
-    ".eslintrc.cjs"
+  "include": [
+    "src/**/*.tsx",
+    "src/assets/img/logo.png"
   ],
-  "include": ["src/**/*.tsx"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [
+    { "path": "./tsconfig.node.json" }
+  ]
 }
