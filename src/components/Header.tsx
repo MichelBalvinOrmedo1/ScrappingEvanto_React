@@ -27,7 +27,7 @@ function Header(): JSX.Element {
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">
-                Something else here
+                Something else her
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#" disabled>
