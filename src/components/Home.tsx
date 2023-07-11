@@ -53,7 +53,9 @@ function Home(): JSX.Element {
             alt="Logo"
           />
 
-          <Search withForm="col-6" />
+          <div className="d-flex justify-content-center">
+            <Search styleForm="search-container search-form" />
+          </div>
         </div>
       </main>
     </div>
