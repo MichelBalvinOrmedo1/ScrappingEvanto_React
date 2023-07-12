@@ -1,8 +1,9 @@
 const express = require("express");
-const controllers = require("../controllers/index.controllers.cjs");
+const { userController } = require("../../controllers/userController.cjs");
+
 const router = express.Router();
 
 // Ruta para obtener información de usuarios
-router.get("/", controllers.index);
+router.get("/", userController);
 
 module.exports = router;
