@@ -1,11 +1,29 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import Cards from "./Cards";
+
+interface Author {
+  author: string;
+  authorUrl: string;
+}
+
+interface Description {
+  description: string;
+  descriptionUrl: string;
+}
+
+interface Image {
+  src: string;
+}
 
 interface UserData {
-  id: number;
-  name: string;
-  email: string;
-  // ...
+  title: string;
+  url: string;
+  data: {
+    authors: Author[];
+    descriptions: Description[];
+    images: Image[];
+  };
 }
 
 function All_Items() {
@@ -31,11 +49,7 @@ function All_Items() {
   return (
     <div>
       <button onClick={handleGoBack}>Go Back</button>
-      {jsonData ? (
-        <pre>{JSON.stringify(jsonData, null, 2)}</pre>
-      ) : (
-        <p>Loading...</p>
-      )}
+      {jsonData ? <Cards Datos={jsonData} /> : <p>Loading...</p>}
     </div>
   );
 }
